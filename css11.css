@@ -1,0 +1,31 @@
+.content{
+    background-image: url(images/what-is-a-computer-algorithm.jpg);
+    width: 50%;
+    height: 400px;
+    outline: 2px solid red;
+    left: 25%;
+    position: absolute;
+    background-position: center;
+}
+.menu{
+    background-color: blue;
+    width: 100%;
+    position: relative;
+    position: absolute;
+    top: 0;
+}
+
+.menu ul{
+    left: 40%;
+    position: relative;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+}
