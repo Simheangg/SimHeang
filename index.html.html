@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Cr</title>
+    <style>
+        body{
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-items: center;
+            height: 90vh;
+        }
+        .container{
+            background-color: pink;
+            padding: 1rem;
+            border-radius: 10px;
+            width: 250px;
+        }
+        .btn{
+            padding: 0.5rem 2rem;
+            border: none;
+            outline: none;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .btn1{
+            color: white;
+            background-color: rgb(191, 134, 191);
+        }
+        .btn2{
+            background-color: rgb(156, 21, 43);
+            padding: 0.5rem 1rem;
+        }
+        .moving{
+            margin-left: 90px;
+        }
+        
+    </style>
+</head>
+<body>
+    <section class="container">
+        <h2 class="text">Do You Love Me ?😄</h2>
+        <button class="btn btn1">Yes</button>
+        <button class="btn btn2">No</button>
+    </section>
+    <script>
+        const btnAgree = document.querySelector(".btn1");
+        const btnDisagree = document.querySelector(".btn2");
+        const text = document.querySelector(".text");
+
+        btnAgree.addEventListener("click", ()=>{
+            text.innerText = "Tos tver ss😂"
+        });
+        btnDisagree.addEventListener("mouseover", ()=>{
+            if(btnDisagree.classList.contains("moving"))
+        {
+            btnDisagree.classList.remove("moving")
+        }   else{
+            btnDisagree.classList.add("moving")
+        }
+        })
+    </script>
+</body>
+</html>
